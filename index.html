@@ -1,31 +1,7 @@
-<iframe id="myIFrame" src="https://v1.embednotion.com/embed/f7ff6558636b467484dfd893e96fc493">
-  <script>
-    window.addEventListener("message", event => {
-      // IMPORTANT: check the origin of the data!
-      if (event.origin.startsWith("https://gry8.github.io")) {
-          // The data was sent from your site.
-          // Data sent with postMessage is stored in event.data:
-          console.log(event.data);
-      } else {
-          // The data was NOT sent from your site!
-          // Be careful! Do not use it. This else branch is
-          // here just for clarity, you usually shouldn't need it.
-          return;
-      }
-    });
-  </script>
-</iframe>
+<iframe src="https://v1.embednotion.com/embed/9bd0b6617d6d440f9f6b80379dc4e925"></iframe>
 
 <style>
 
-iframe { width: 100%; height: 500px; border: 2px solid #ccc; border-radius: 10px; padding: none; }
+iframe { width: 100%; height: 100%; padding: none; }
 
 </style>
-<script>
-  const frame = document.getElementById("myIFrame");
-  frame.contentWindow.postMessage("test", "https://v1.embednotion.com/embed/f7ff6558636b467484dfd893e96fc493");
-  
-  function myFunction() {
-    document.getElementById("ml-1 inline-flex items-center space-x-2 font-bold").style.display = "none";
-  }
-</script>
