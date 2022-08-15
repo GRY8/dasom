@@ -16,7 +16,7 @@
       height: 64px; 
       top: 0px;
       position: fixed;
-      background-color: white;
+      background-color: black;
       z-index: 9999 !important;
       border-bottom: 1px solid #ccc;
     }
@@ -66,6 +66,11 @@
       text-decoration: underline;
       text-underline-offset: 0.1em;
     }
+    .responsive {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
     iframe { width: 100%; height: 120%; border: none; border-radius: 0px; padding: none; margin: none; }
   </style>
 </head>
@@ -80,5 +85,7 @@
       </div>
     </div>
   </div>
-  <iframe src="https://v1.embednotion.com/embed/9bd0b6617d6d440f9f6b80379dc4e925"></iframe>
+  <div class="responsive">
+    <iframe src="https://v1.embednotion.com/embed/9bd0b6617d6d440f9f6b80379dc4e925"></iframe>
+  </div>
 </body>
